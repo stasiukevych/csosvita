@@ -11,47 +11,47 @@
 <body>
 <header>
     <span>
-        <a href="/">
+        <a href="/" aria-label="Main Logo">
             <img src="images/logo.svg" alt="IMAJI Coffee Logo">
         </a>
     </span>
-    <nav>
+    <nav aria-label="Navigation Pages">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Story</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="#" aria-current="page">Menu</a></li>
             <li><a href="#">Space</a></li>
             <li><a href="#">Community</a></li>
             <li><a href="#">News</a></li>
         </ul>
     </nav>
     <div>
-        <button type="button">Cart</button>
-        <button type="button">Sign In</button>
+        <button id="cart" type="button" aria-label="Cart Items">Cart</button>
+        <button id="sign-in" type="button" aria-label="Logging">Sign In</button>
     </div>
 </header>
 
-<main>
-    <section>
+<main aria-label="Content">
+    <section aria-label="Coffee Item Details">
         <aside id="coffee-thumbnails">
-            <ul>
-                <li>
-                    <button>
+            <ul aria-label="Coffee Thumbnails">
+                <li aria-label="Coffee Thumbnail">
+                    <button type="button" aria-label="Show main product image #1">
                         <img src="images/coffee-front.svg" alt="Classic coffee package – front view">
                     </button>
                 </li>
-                <li>
-                    <button>
+                <li aria-label="Coffee Thumbnail">
+                    <button type="button" aria-label="Show coffee drink photo">
                         <img src="images/coffee-drink.svg" alt="Freshly brewed cup of coffee">
                     </button>
                 </li>
-                <li>
-                    <button>
+                <li aria-label="Coffee Thumbnail">
+                    <button type="button" aria-label="Show brewing process image">
                         <img src="images/barista-pouring.svg" alt="Barista pouring coffee">
                     </button>
                 </li>
-                <li>
-                    <button>
+                <li aria-label="Coffee Thumbnail">
+                    <button type="button" aria-label="Show drip coffee bag">
                         <img src="images/coffee-bag.svg" alt="Drip coffee bag being used">
                     </button>
                 </li>
@@ -60,12 +60,12 @@
         <div id="coffee-main-image">
             <img src="images/coffee-front.svg" alt="Classic coffee package - main view">
         </div>
-        <article>
-            <nav>
+        <article aria-label="Coffee Item Description">
+            <nav aria-label="Hero Breadcrumb">
                 <ol>
                     <li><a href="/">Home</a></li>
                     <li><a href="/menu">Menu</a></li>
-                    <li><a href="/detail">Detail</a></li>
+                    <li><a href="/detail" aria-current="page">Detail</a></li>
                 </ol>
             </nav>
             <div>
@@ -87,22 +87,22 @@
                     Storage Way:
                     To maintain the taste of coffee and the freshness of the aroma, store Excelso coffee in an
                     airtight. </p>
-                <a href="/item-description">Read less</a>
+                <a href="/item-description" aria-label="More Item Information">Read less</a>
             </div>
             <form>
                 <div>
-                    <button type="button">-</button>
+                    <button type="button" aria-label="Decrease quantity">-</button>
                     <label for="quantity" hidden>Product Cary Quantity</label>
                     <input id="quantity" name="quantity" type="number" value="1" readonly>
-                    <button type="button">+</button>
+                    <button type="button" aria-label="Increase quantity">+</button>
                 </div>
                 <button type="submit">Add to Cart</button>
             </form>
         </article>
     </section>
-    <section>
+    <section aria-label="Coffee Items On Sale">
         <h2>You May Also Like</h2>
-        <article>
+        <article aria-label="Coffee Item On Sale">
             <img src="images/house-blend.svg" width="262" height="300" alt="Coffee - House Blend">
             <div>
                 <h3>AT HOME HOUSE BLEND</h3>
@@ -111,10 +111,10 @@
             <div>
                 <span>$5,00</span>
                 <s>$6,00</s>
-                <a href="/discount">Get 20% Off in App</a>
+                <a href="/discount" aria-label="Discount Link">Get 20% Off in App</a>
             </div>
         </article>
-        <article>
+        <article aria-label="Coffee Item On Sale">
             <img src="images/arabica.svg" width="262" height="300" alt="Coffee - Arabica">
             <div>
                 <h3>AT HOME ARABICA</h3>
@@ -123,10 +123,10 @@
             <div>
                 <span>$5,00</span>
                 <s>$6,00</s>
-                <a href="/discount">Get 20% Off in App</a>
+                <a href="/discount" aria-label="Discount Link">Get 20% Off in App</a>
             </div>
         </article>
-        <article>
+        <article aria-label="Coffee Item On Sale">
             <img src="images/luwak.svg" width="262" height="300" alt="Coffee - Luwak">
             <div>
                 <h3>AT HOME LUWAK</h3>
@@ -135,10 +135,10 @@
             <div>
                 <span>$5,00</span>
                 <s>$6,00</s>
-                <a href="/discount">Get 20% Off in App</a>
+                <a href="/discount" aria-label="Discount Link">Get 20% Off in App</a>
             </div>
         </article>
-        <article>
+        <article aria-label="Coffee Item On Sale">
             <img src="images/luwak2.svg" width="262" height="300" alt="Coffee - Luwak2">
             <div>
                 <h3>AT HOME LUWAK</h3>
@@ -147,14 +147,14 @@
             <div>
                 <span>$5,00</span>
                 <s>$6,00</s>
-                <a href="/discount">Get 20% Off in App</a>
+                <a href="/discount" aria-label="Discount Link">Get 20% Off in App</a>
             </div>
         </article>
     </section>
 </main>
 
 <footer>
-    <article>
+    <article aria-label="Location Information">
         <h2>Our Location</h2>
         <address>
             Jl. Bangkringan No 19, RT.11/RW.2, Kota Surabaya, 60124<br>
@@ -163,7 +163,7 @@
         </address>
     </article>
     <div>
-        <nav>
+        <nav aria-label="Social Medias">
             <ul>
                 <li>
                     <a href="#"><img src="images/icons/spotify.png" alt="Spotify"></a>
@@ -186,9 +186,9 @@
             </ul>
         </nav>
 
-        <div>
+        <div aria-label="Download App">
             <p>Delivery Order</p>
-            <a href="https://www.apple.com" target="_blank">
+            <a href="https://www.apple.com" target="_blank" aria-label="Apple Device Link">
                 <span>
                     <img src="images/icons/apple.svg" alt="Apple Store">
                 </span>
@@ -197,7 +197,7 @@
                     <span>App Store</span>
                 </span>
             </a>
-            <a href="https://www.google.com" target="_blank">
+            <a href="https://www.google.com" target="_blank" aria-label="Google Device Link">
                 <span>
                     <img src="images/icons/google.svg" alt="Google Play">
                 </span>
@@ -208,7 +208,7 @@
             </a>
         </div>
     </div>
-    <div>
+    <div aria-label="Rights and Policy">
         <span>&copy; 2023 IMAJI COFFEE, All rights reserved</span>
         <span>
             <a href="#">Terms and Conditions</a>
