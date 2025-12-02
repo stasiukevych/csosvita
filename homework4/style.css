@@ -31,7 +31,6 @@ body {
 }
 
 .button {
-    outline: none;
     border: 2px solid var(--bg-color-primary);
     padding-inline: 1rem;
     padding-block: .75rem;
