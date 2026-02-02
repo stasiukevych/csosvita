@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homework 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+    <div style="margin-bottom: 30px; display: flex; justify-content: center; gap: 15px;">
+        <div style="display: flex; justify-content: space-between; gap: 5px;">
+            <label for="search">Search</label>
+            <input type="search" id="search" placeholder="Search">
+        </div>
+        <div style="display: flex; justify-content: space-between; gap: 5px;">
+            <label for="price-select">Price:</label>
+            <select name="prices" id="price-select">
+                <option value="" disabled selected>-- Select a price --</option>
+                <option value="10">Under 10</option>
+                <option value="15">Under 15</option>
+                <option value="30">Under 30</option>
+            </select>
+        </div>
+        <div style="display: flex; justify-content: space-between; gap: 5px;">
+            <label for="sort-select">Sort By:</label>
+            <select name="sorting" id="sort-select">
+                <option value="" disabled selected>-- Select an sorting --</option>
+                <option value="price">By Price</option>
+                <option value="name">By Name</option>
+                <option value="category">By Category</option>
+            </select>
+        </div>
+        <div style="display: flex; justify-content: space-between; gap: 5px;">
+            <label for="category-select">Category:</label>
+            <select name="categories" id="category-select">
+                <option value="" disabled selected>-- Select a category --</option>
+                <option value="beverages">Beverages</option>
+                <option value="food">Food</option>
+                <option value="coffee-beans">Coffee Beans</option>
+                <option value="equipment">Equipment</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <ul id="products" class="food" aria-label="food-items" role="list">
+
+        </ul>
+    </div>
+</section>
+
+<script src="app.js" defer></script>
+</body>
+</html>
