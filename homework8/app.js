@@ -39,10 +39,9 @@ function filterProducts() {
     const selectedCategory = document.getElementById('category-select').value;
     const searchText = document.getElementById('search').value.toLowerCase();
 
-    let filtered = [...allProducts];
-
-    filtered = filtered.filter(p => passesFilter(p, searchText, priceMax, selectedCategory));
-    filtered = filtered.sort(getProductComparator(sortBy));
+    const filtered = allProducts
+        .filter(p => passesFilter(p, searchText, priceMax, selectedCategory))
+        .sort(getProductComparator(sortBy));
 
     console.log(filtered);
     render(filtered);
