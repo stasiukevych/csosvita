@@ -26,7 +26,6 @@ function Book(title, author, year) {
 // work with prototype
 Book.prototype.getSummary = function () {
     return `${this.title} ${this.author} ${this.year}`;
-    G
 }
 
 Book.prototype.getAge = function () {
@@ -112,7 +111,7 @@ class Book2 {
         return `${this.title} is ${years} years old`;
     }
 
-    revise(newYear) {
+    revise = (newYear) => {
         this.year = newYear;
         this.revised = true;
     }
@@ -124,6 +123,7 @@ class Book2 {
 
 // instantiate object
 const book6 = new Book2('Title 1', 'Author 1', '1999');
+console.log(book6);
 console.log(Book2.topBookStore());
 
 // subclasses
